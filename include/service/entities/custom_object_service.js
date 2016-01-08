@@ -504,7 +504,7 @@ module.exports = function CustomObjectServiceModule(pb) {
     };
 
     /**
-     * Retrieves a count based the specified criteria and type
+     * Retrieves a count based on the specified criteria and type
      * @method countByType
      * @param {Object|String} type The custom object type object or ID string
      * @param {Object} [where] The criteria for which objects to count

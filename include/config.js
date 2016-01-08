@@ -131,7 +131,7 @@ var BASE_CONFIG = {
 
     //The root of the site.  This host part should ALWAYS match the value of
     //the siteIP
-	siteRoot: 'http://localhost:8080',
+	siteRoot: 'http://localhost:2583',
 
     //The hostname or IP address that the web server instance will bind to
 	siteIP:   '0.0.0.0',
@@ -139,7 +139,7 @@ var BASE_CONFIG = {
     //The primary port to listen for traffic on.  Some environment such as
     //heroku force you to use whatever port they have available.  In such cases
     //the port is passed as an environment variable.
-	sitePort: process.env.port || process.env.PORT || 8080,
+	sitePort: process.env.port || process.env.PORT || 2583,
 
     //the absolute file path to the directory where installation lives
 	docRoot:  Configuration.DOCUMENT_ROOT,
@@ -617,7 +617,7 @@ var BASE_CONFIG = {
     server: {
         ssl: {
             enabled: false,
-            handoff_port: 8080,
+            handoff_port: 2583,
             use_x_forwarded: false,
             use_handoff_port_in_redirect: false,
             key: "ssl/key.pem",
